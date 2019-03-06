@@ -1,9 +1,9 @@
 # test
 CalThreekingdoms.py利用jieba库统计三国演义任务的出场次数
-`import jieba  
-txt = open("threekingdoms.txt","r",encoding="utf-8").read()  
-excludes = {"将军","却说","荆州","二人","不可","不能","如此","商议","如何"}  
-words = jieba.lcut(txt)  
+`import jieba` 
+` txt = open("threekingdoms.txt","r",encoding="utf-8").read()`   
+` excludes = {"将军","却说","荆州","二人","不可","不能","如此","商议","如何"}`   
+` words = jieba.lcut(txt)` 
 counts = { }  
 for word in words:  
     if len(word) == 1:  
