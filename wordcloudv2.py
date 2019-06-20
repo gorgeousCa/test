@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import jieba
 import wordcloud
 f = open("/新时代中国特色社会主义.txt","r",encoding="utf-8")
