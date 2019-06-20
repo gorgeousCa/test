@@ -7,8 +7,7 @@ f.close()
 ls = jieba.lcut(t)
 txt = " ".join(ls)
 w = wordcloud.WordCloud(font_path= "Microsoft YaHei UI.ttc",\
-                        width =1000, height = 700,background_color="white",\
-                        )
+                        width =1000, height = 700,background_color="white",)
 w.generate(txt)
 w.to_file("grwordcloud.png")
 
