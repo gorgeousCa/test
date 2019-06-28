@@ -3,7 +3,9 @@ import jieba
 txt = open("threekingdoms.txt","r",encoding="utf-8").read()
 excludes = {"将军","却说","荆州","二人","不可","不能","如此","商议","如何"}
 words = jieba.lcut(txt)
+
 counts = { }
+
 for word in words:
     if len(word) == 1:
         continue
@@ -18,6 +20,7 @@ for word in words:
     else:
         rword = word
     counts[rword] = counts.get(rword,0) + 1
+    
 for word in excludes:
     del counts[word]
 items = list(counts.items())
